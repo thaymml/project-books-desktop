@@ -90,25 +90,3 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    .livro {
-        width: 100%;
-    }
-}
-
-
-.footer {
-    background-color: #a6aec1; 
-    color: #333; 
-    padding: 10px;
-    text-align: right;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-.citacao {
-    margin-left: 20px; 
-    font-style: italic; 
-    text-align: left;
-
-}

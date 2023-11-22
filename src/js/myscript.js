@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const livros = document.querySelectorAll('.livro');
     const sinopses = document.querySelectorAll('.sinopse');
 
@@ -13,12 +13,24 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             sinopses[index].style.display = 'block';
         });
+
+        // Adicionado suporte a eventos de toque
+        livro.addEventListener('touchstart', () => {
+            if (sinopses[index].style.display === 'block') {
+                sinopses[index].style.display = 'none';
+                return;
+            }
+            sinopses.forEach(sinopse => {
+                sinopse.style.display = 'none';
+            });
+            sinopses[index].style.display = 'block';
+        });
     });
 
     const livrosContainer = document.querySelector('.livros');
     const setaEsquerda = document.querySelector('.seta-esquerda');
     const setaDireita = document.querySelector('.seta-direita');
-    const larguraLivro = 350; 
+    const larguraLivro = 350;
     const margemLivro = 20;
     const totalLivros = document.querySelectorAll('.livro').length;
     let posicaoInicial = 0;

@@ -1,0 +1,53 @@
+@media (max-width: 769px) {
+    .livros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .livros {
+        width: 90%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .livro {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .livro img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; 
+        border-radius: 5px;
+        margin-bottom: 10px;
+        max-height: 300px;
+    }
+
+    .sinopse {
+        /*width: 100%;*/
+        width: 90%;
+        max-width: 90%; 
+        font-size: 14px; 
+        padding: 10px; 
+        overflow-y: auto; 
+        max-height: 50vh; 
+    }
+
+    .seta-esquerda,
+    .seta-direita {
+        font-size: 18px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .livros {
+        width: 100%;
+    }
+} 
+
+
